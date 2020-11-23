@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: " ";
+}
+ul {
+  padding-left: 22px;
+}
+body,
+html {
+  margin: 0;
+}
+
+@import url(fonts.css)
+
+/* Не юзайте глобальные стили. Добавьте работу
+просто вставив свои стили и блоки в проект
+
+Юзайте шрифты!!!! Названия в файле fonts.css*/
