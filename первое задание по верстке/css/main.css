@@ -1,0 +1,185 @@
+@import url(fonts.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: " ";
+}
+
+ul {
+  padding-left: 22px;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+.what-we-do-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 200px;
+  margin-left: 185px;
+  margin-right: 185px;
+}
+
+.what-we-do-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.what-we-do-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.what-we-do-card {
+  height: 319px;
+  width: 270px;
+  border-style: solid;
+  border-radius: 1.5%;
+  border-width: 1px;
+  border-color: rgb(228, 228, 228);
+  padding-top: 60px;
+}
+
+.what-we-do-card-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 33px;
+}
+
+.what-we-do-card-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.what-we-do-card-text {
+  margin-top: 0;
+  font-size: 14px;
+  color: #787878;
+  text-align: center;
+}
+
+.what-we-do-card:hover {
+  border-color: rgb(49, 114, 185);
+  border-width: 3px;
+  background-color: rgb(64, 134, 211);
+  color: #ffffff;
+}
+
+.text-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.separator {
+  height: 1px;
+  background-color: rgb(228, 228, 228);
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.our-happy-clients-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-left: 185px;
+  margin-right: 185px;
+  margin-bottom: 150px;
+}
+
+.our-happy-clients-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 50px;
+}
+
+.our-happy-clients-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.our-happy-clients-card {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  padding-top: 60px;
+  padding-left: 37px;
+  padding-right: 37px;
+  width: 370px;
+  height: 362px;
+  border-width: 1px;
+  border-radius: 1.5%;
+  border-color: rgb(228, 228, 228);
+}
+
+.clients-card-separator {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(228, 228, 228);
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.our-happy-clients-card-text {
+  font-size: 14px;
+  color: #787878;
+  margin: 0;
+}
+
+.profile-picture {
+  margin-top: 0;
+}
+
+.our-happy-clients-card-profile {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-name {
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 17px;
+  color: #1c1c1c;
+}
+
+.profile-role {
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #787878;
+}
+
+#our-happy-clients-title {
+  font-size: 36px;
+  color: #414141;
+}
+
+#what-we-do-title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 36px;
+  color: #1c1c1c;
+}
+
+#what-we-do-paragraph {
+  margin-top: 0;
+  margin-bottom: 57px;
+  font-size: 16px;
+  color: #787878;
+}
