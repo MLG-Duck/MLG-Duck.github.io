@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script> <title>
+    Projects
+  </title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- Button trigger modal -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-10 col-lg-4 mx-auto m-5 align-middle">
+        <div class="project-chooser">
+          <form class="align-middle">
+            <div class="form-group mb-5">
+              <label for="inputState" class="mb-3">Выберите проект</label>
+              <button type="button" class="btn btn-primary float-right mb-4" data-toggle="modal"
+                data-target="#exampleModal">
+                Вход
+              </button>
+              <select id="inputState" class="form-control">
+                <option selected>Пусто</option>
+                <option value="">Проект 1</option>
+                <option value="">Проект 2</option>
+                <option value="">Проект 3</option>
+                <option value="">Проект 4</option>
+                <option value="">Проект 5</option>
+                <option value="">Проект 6</option>
+                <option value="">Проект 7</option>
+                <option value="">Проект 8</option>
+                <option value="">Проект 9</option>
+                <option value="">Проект 10</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-primary" id="confirm" disabled>Подтвердить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Авторизация через OpenID</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="m-auto">
+            <div class="form-group row">
+              <label for="colFormLabelSm" class="col-sm-12 col-lg-4 col-form-label col-form-label-sm">Email
+                sfedu</label>
+              <div class="col-sm-12 col-lg-8">
+                <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
+                  placeholder="example@sfedu.ru">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="colFormLabelSm" class="col-sm-12 col-lg-4 col-form-label col-form-label-sm">Пароль
+                sfedu</label>
+              <div class="col-sm-12 col-lg-8">
+                <input type="password" class="form-control form-control-sm" id="colFormLabelSm"
+                  placeholder="*************">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Авторизация</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
