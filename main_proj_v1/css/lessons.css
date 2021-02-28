@@ -247,3 +247,6 @@ ul {
 .active-tab img {
     filter: invert(100%);
 }
+.active-link {
+    color: #B111EA;
+}
