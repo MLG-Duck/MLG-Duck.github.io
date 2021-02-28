@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 :root {
-    font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;
+    font-family: 'RobotoRegular',
+        Helvetica,
+        Arial,
+        sans-serif;
     overflow-x: hidden;
 }
 
@@ -21,9 +22,15 @@ body {
 }
 
 nav {
+
     width: 100rem;
     justify-content: center;
     display: flex;
+}
+
+.navbar {
+        margin: 30px 0 0 0;
+        padding: 0;
 }
 
 .navbar-item {
@@ -42,6 +49,11 @@ ul {
 
 .navbar-item {
     margin: 0px 10px;
+    transition: all 0.2s;
+}
+
+.navbar-item:hover {
+    color: #B111EA
 }
 
 .header-text {
@@ -53,7 +65,7 @@ ul {
 
 .title {
     margin: 165px 0px 20px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 64px;
     line-height: 75px;
     letter-spacing: 0.25em;
@@ -192,11 +204,7 @@ ul {
 
 }
 
-.active-subj {
-    border: 3px solid #B111EA;
-    box-sizing: border-box;
-    border-radius: 7px;
-}
+
 
 .horizontal-subj-block-wrap {
     width: 467px;
@@ -208,23 +216,34 @@ ul {
     font-size: 36px;
     line-height: 42px;
     color: #000000;
+    transition: all 0.2s;
 }
 
 .subj-descryption {
     font-size: 16px;
     line-height: 150%;
-    color: #D4D4D4
+    color: #D4D4D4;
+    transition: all 0.2s;
 }
 
-.active-subj .subj-title {
+.subj {
+    transition: all 0.2s;
+}
+
+.subj:hover .subj-title {
     color: #B111EA;
 }
 
-.active-subj .subj-descryption {
+.subj:hover {
+    border: 3px solid #B111EA;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.subj:hover .subj-descryption {
     color: #000000;
 }
 
 .active-tab img {
     filter: invert(100%);
 }
-/*169901*/
