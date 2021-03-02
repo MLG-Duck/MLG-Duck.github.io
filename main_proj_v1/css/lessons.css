@@ -35,7 +35,16 @@ nav {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
+    margin: 0px 10px;
+    transition: all 0.2s;
+    font-size: 20px;
+    line-height: 23px;
 }
+
+.navbar-item:hover {
+    color: #B111EA
+}
+
 
 header {
     height: 628px;
@@ -44,15 +53,6 @@ header {
 
 ul {
     list-style-type: none;
-}
-
-.navbar-item {
-    margin: 0px 10px;
-    transition: all 0.2s;
-}
-
-.navbar-item:hover {
-    color: #B111EA
 }
 
 .header-text {
