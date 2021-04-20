@@ -21,7 +21,7 @@ body {
 
 nav {
 
-    width: 100rem;
+    width: 100vw;
     justify-content: center;
     display: flex;
 }
@@ -49,6 +49,7 @@ nav {
 header {
     height: 628px;
     background: url(../img/lessons/Body.png) bottom center no-repeat;
+    background-size: 100%;
 }
 
 ul {
