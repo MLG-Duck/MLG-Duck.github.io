@@ -1,12 +1,12 @@
-@import "../fonts/fonts";
+
 body{
-    font-family: 'RobotoRegular', Helvetica, Arial, sans-serif ;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif ;
 
 }
 
 h1, h2, h3, h4, h5, h6{
     font-weight: normal;
-    font-family: 'RobotoRegular', Helvetica, Arial, sans-serif ;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif ;
     text-align: center;
 }
 
@@ -44,8 +44,12 @@ a:visited{
     color: #B111EA;
 }
 
+#exit:hover{
+    color: #ea111c;
+}
+
 .topnav{
-    font-family: 'RobotoRegular';
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -62,6 +66,7 @@ a:visited{
     text-align: center;
     min-height: 140px;
 }
+
 
 
 
@@ -139,7 +144,7 @@ a:visited{
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-    font-family: "RobotoRegular";
+    font-family: "Roboto";
 
 }
 
@@ -172,6 +177,7 @@ a:visited{
 
 .CourseTitle{
     margin-bottom: 32px;
+    font-size: 36px;
 }
 
 .CourseDescription{
@@ -183,13 +189,25 @@ a:visited{
 }
 
 .CourseP{
-    font-family: RobotoLight;
+    font-family: Roboto;
+    font-weight: 400;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
 }
 
+.H3teacher{
+    
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
 
 .Where{
     display: flex;
@@ -244,6 +262,18 @@ a:visited{
     
 }
 
+.WhereElem{
+    
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: justified;
+
+}
+
 .teacher{
     display: flex;
     flex-direction: column;
@@ -255,6 +285,15 @@ a:visited{
 
 .eMail{
     color:#B111EA;
+    
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: justified;
+
 }
 
 .crossing{
@@ -275,6 +314,7 @@ a:visited{
 
 .themeTitle > h2 {
     text-align: left;
+    
 }
 
 .arrow {
@@ -282,9 +322,17 @@ a:visited{
     margin-top: 15px;
     width: 21px;
     height: 10px;
+    stroke:#B111EA;
 }
 
-.SideBar{
+.arrow:hover path{
+    stroke:#B111EA;
+    cursor: pointer;
+}
+
+
+
+.SideBar{   
     margin: 0 42px;
     
 }
@@ -297,15 +345,20 @@ a:visited{
 }
 
 .Theme{
-    min-width: 495px;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
 }
 
+.Theme>h2{
+    font-size: 32px;
+    text-align: left;
+}
+
 .Date{
-    font-family: RobotoLight;
+    font-family: Roboto;
     color:#D4D4D4;
     font-size: 18px;
     line-height: 27px;
@@ -325,7 +378,7 @@ a:visited{
 }
 
 .themePar{
-    font-family: RobotoLight;
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -343,7 +396,7 @@ a:visited{
     text-transform: lowercase;
     color: #B111EA;
     margin-left: 5px;
-    margin-top: 80px;
+    margin-top: 40px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -352,6 +405,7 @@ a:visited{
 .active{
     transform: rotate(0.5turn);
     transition: max-height 0.2s ease-out;
+    
     
 }
 
@@ -370,8 +424,8 @@ a:visited{
         align-items: center;
     }
 
-    .LeftSide .RightSide{
-        min-width: 495px;
+    .LeftSide{
+        min-width: 300px;
         
         width: 90%;
         margin-left: 10%;
@@ -380,12 +434,26 @@ a:visited{
         text-align: center;
     }
 
-    .CourseP{
+    .RightSide{
+        min-width: 300px;
+        
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 0;
+        margin: auto;
         text-align: center;
+        align-items: center;
+    }
+
+    .CourseP{
+        text-align: left;
+        
+        
     }
 
     .RightSide{
         margin-top: 50px;
+        margin-right: 10%;
     }
 
     .CourseTeachers{
@@ -393,7 +461,7 @@ a:visited{
     }
 
     .Theme{
-        text-align: center;
+        text-align: left;
     }
 
     .CourseDescription{
@@ -407,4 +475,102 @@ a:visited{
     .SideBar{
         margin-left: 0;
     }
+
+    .themePar{
+        width: 350px;
+    }
+
+    .SideBar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .head_description{
+        margin-top: 50px;
+        
+    }
+    .header{
+        margin-bottom: 50px;
+    }
+  }
+
+
+  @media screen and  (max-width:850px){
+      .nav_links{
+          flex-direction: column;
+          align-items: center;
+      }
+      .topnav{
+          font-size: 15px;
+          margin-right: 0;
+          margin-bottom: 5px;
+      }
+  }
+
+
+  @media screen and  (max-width:600px){
+      .Theme>h2{
+          font-size: 24px;
+      }
+
+      .head_description{
+          margin-top: 50px;
+      }
+
+      .head_description>h1{
+          font-size: 38px;
+          margin: 0;
+      }
+
+      .psevdTop,
+      .psevdBot{
+          min-width: 200px;
+      }
+
+      .psevdBot::before{
+          font-size: 7px;
+      }
+
+      
+
+      .psevdBot:after,
+      .psevdTop::before{
+          width: 150px;
+          height: 4px;
+      }
+
+      .head_description{
+          min-height: 80px;
+      }
+
+
+
+      .CourseP, .WhereElem, .teacherTitle, 
+      .themePar{
+          font-size: 15px;
+      }
+      .CourseTitle{
+          font-size: 30px;
+      }
+
+      .header{
+          margin-bottom: 50px;
+      }
+
+      
+
+      .RightSide{
+          justify-content: center;
+          align-items: center;
+          width: none;
+      }
+
+      .themePar{
+          width: 80%;
+      }
+
+      .SideBar{
+          margin: 0 24px;
+      }
   }
