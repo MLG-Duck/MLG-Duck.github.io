@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
         
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Тайтл страницы - название предмета-->
     <title>Страница курса</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/LessonPage.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
     
@@ -17,7 +20,7 @@
             <a href="#" class="topnav">главная</a>
             <a href="#" class="topnav">список предметов</a>
             <a href="#" class="topnav">первокурсникам</a>
-            <a href="#" class="topnav">расписание</a>
+            <a href="#" class="topnav" id="exit">выйти</a>
         </div>
     
         <div class="head_description">
@@ -53,34 +56,19 @@
 
                     <div class="infoGroup">
                         <span class="WhereElem">
-                            Лекции:
+                            Лекции: 
                         </span>
-                        <!--Аудитория Лекция-->
-                        <span class="WhereElem">
-                            Д-230
-                        </span>
-                    </div>
-
-                    <div class="infoGroup">
-                        
-                        <span class="WhereElem">
-                            Практика:
-                        </span>
-                        <!--Аудитория практика -->
-                        <span class="WhereElem">
-                            Д-112 
-                        </span>
-                    </div>
-
-                    <div class="infoGroup">
-                        <span class="WhereElem">
-                            Лабораторные
-                        </span>
-                        <!-- Аудитория Лабы-->
+                        <!--Если аудиторно, то ссылка пуста,
+                            Текст - номер аудтории.
+                        Если онлайн, то ссылка на тимс, текст "Teams"-->
                         <a class="WhereElem" href="#">
                             Teams
                         </a>
                     </div>
+
+                    
+
+                    
                 </div>
             </div>
 
@@ -93,7 +81,7 @@
     
                     <div class="teacher">
                         <div class="teacherTitle">
-                            <img src="img/LessonPage/link.svg" alt="link">
+                            
                             <!--Имя препода -->
                             <h3 class="H3teacher">Хусаинов Н.Ш.</h3>
                         </div>
@@ -108,13 +96,7 @@
 
 
                         <div class="contact">
-                            <div class="social">
-                                <!-- Ссылка на ВК-->
-                                <a href="">
-                                   VK 
-                                </a>
-                                
-                            </div>
+                            
                             <!-- Почта препода-->
                             <div class="eMail">
                                 teacher_email@sfedu.ru
@@ -124,7 +106,7 @@
 
                     <div class="teacher">
                         <div class="teacherTitle">
-                            <img src="img/LessonPage/link.svg" alt="link">
+
                             <h3 class="H3teacher">Хусаинов Н.Ш.</h3>
                         </div>
                         <p class="CourseP">
@@ -137,12 +119,7 @@
 
 
                         <div class="contact">
-                            <div class="social">
-                                <a href="">
-                                   VK 
-                                </a>
-                                
-                            </div>
+                            
 
                             <div class="eMail">
                                 teacher_email@sfedu.ru
@@ -179,7 +156,9 @@
 
             <div class="ThemeContainer">
                 <div class="SideBar">
-                    <img src="img/LessonPage/arrow.svg" alt="" class="arrow">
+                    <svg class="arrow" width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9L10.1823 2.63683C9.79811 2.27824 9.20189 2.27824 8.81768 2.63683L2 9" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     <span class="TextOnLeft">
                        Описание 
                     </span>
@@ -187,13 +166,13 @@
                     
                 </div>
                 <div class="Theme">
+                    <!--Название темы предмета-->
                     <h2>
                         Комплексные числа
                     </h2>
-                    <h3 class="Date">
-                        20.12.2002 - 02.02.2003
-                    </h3>
+                    
                     <div class="HiddenInfo">
+                        <!--Описание темы предмета-->
                         <p class="themePar">Lacus at duis vulputate venenatis dui,
                             augue venenatis. Nam risus pellentesque ac tortor elit.
                             Non eget quam id amet consectetur ullamcorper facilisis. 
@@ -211,19 +190,21 @@
 
             <div class="ThemeContainer">
                 <div class="SideBar">
-                    <img src="img/LessonPage/arrow.svg" alt="" class="arrow">
+                    <svg class="arrow" width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9L10.1823 2.63683C9.79811 2.27824 9.20189 2.27824 8.81768 2.63683L2 9" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     <span class="TextOnLeft">
                        Описание
                     </span>
                 </div>
                 <div class="Theme">
+                    <!--Название темы предмета-->
                     <h2>
                         Комплексные числа
                     </h2>
-                    <h3 class="Date">
-                        20.12.2002 - 02.02.2003
-                    </h3>
+                    
                     <div class="HiddenInfo">
+                        <!--Описание темы предмета-->
                         <p class="themePar">Lacus at duis vulputate venenatis dui,
                             augue venenatis. Nam risus pellentesque ac tortor elit.
                             Non eget quam id amet consectetur ullamcorper facilisis. 
@@ -240,19 +221,21 @@
 
             <div class="ThemeContainer">
                 <div class="SideBar">
-                    <img src="img/LessonPage/arrow.svg" alt="" class="arrow">
+                    <svg class="arrow" width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9L10.1823 2.63683C9.79811 2.27824 9.20189 2.27824 8.81768 2.63683L2 9" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     <span class="TextOnLeft">
                        Описание
                     </span>
                 </div>
                 <div class="Theme">
+                    <!--Название темы предмета-->
                     <h2>
                         Комплексные числа
                     </h2>
-                    <h3 class="Date">
-                        20.12.2002 - 02.02.2003
-                    </h3>
+                    
                     <div class="HiddenInfo">
+                        <!--Описание темы предмета-->
                         <p class="themePar">Lacus at duis vulputate venenatis dui,
                             augue venenatis. Nam risus pellentesque ac tortor elit.
                             Non eget quam id amet consectetur ullamcorper facilisis. 
