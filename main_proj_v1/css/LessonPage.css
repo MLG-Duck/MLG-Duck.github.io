@@ -117,7 +117,7 @@ a:visited{
     display: block;
     width: 200px;
     height: 6px;
-    background-color: #B111EA;
+    background-color: #none;
     left: 0;
 }
 
@@ -181,7 +181,7 @@ a:visited{
     display: block;
     width: 200px;
     height: 6px;
-    background-color: #B111EA;
+    background-color: #none;
     right: 0;
 }
 
