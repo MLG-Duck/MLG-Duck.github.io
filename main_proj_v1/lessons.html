@@ -11,16 +11,23 @@
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <div class="row navbar-wrap menu">
-                    <li><a class="navbar-item" href="#">Главная</a></li>
-                    <li><a class="navbar-item active-link active" href="#">Список предметов</a></li>
-                    <li><a class="navbar-item" href="#">Первокурсникам</a></li>
-                    <li><a class="navbar-item" href="#">Расписание</a></li>
+        <div class="header">
+            <div class="container">
+                <div class="header_body">
+                    <div class="header_burger">
+                        <span></span>
+                    </div>
+                    <nav class="header_menu">
+                        <ul class="header_list">
+                            <li><a href="" class="header_link">Главная</a></li>
+                            <li><a href="" class="header_link active_link">Список предметов</a></li>
+                            <li><a href="" class="header_link">Первокурсникам</a></li>
+                            <li><a href="" class="header_link">Расписание</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </ul>
-        </nav>
+            </div>
+        </div>
         <div class="header-text row">
             <div class="column">
                 <h1 class="title">СПИСОК ПРЕДМЕТОВ</h1>
@@ -39,15 +46,20 @@
     <div class="main row">
         <div class="main-wrap column">
             <ul class="tabs row">
-                <li class="tab left-tab active-tab active">
-                    <div class="row tab-wrap">
-                        <img src="img/lessons/icons/check-list.svg" alt=""> Выбранные предметы
-                    </div>
+                <li class="tab left-tab">
+                    <a href="javascript:void(0);">
+                        <div class="row tab-wrap">
+                            <img src="img/lessons/icons/check-list.svg" alt=""> <span class="tab-title">Выбранные
+                                предметы</span>
+                        </div>
+                    </a>
                 </li>
-                <li class="tab right-tab">
-                    <div class="row tab-wrap">
-                        <img src="img/lessons/icons/list.svg" alt=""> Выбор предметов
-                    </div>
+                <li class="tab right-tab active-tab">
+                    <a href="javascript:void(0);">
+                        <div class="row tab-wrap">
+                            <img src="img/lessons/icons/list.svg" alt=""> <span class="tab-title">Выбор предметов</span>
+                        </div>
+                    </a>
                 </li>
             </ul>
             <div class="subjects">
@@ -111,5 +123,7 @@
             </div>
         </div>
     </div>
+    <script src="js/lessons.js"></script>
 </body>
+
 </html>
