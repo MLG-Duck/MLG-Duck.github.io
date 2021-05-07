@@ -276,7 +276,7 @@ ul {
 
 
 @media screen and (max-width: 768px) {
-    .title {
+    .header-text .title {
         font-size: calc(35px + (16 + 16 * 0.7) * ((100vw - 320px) / 768));
     }
 
