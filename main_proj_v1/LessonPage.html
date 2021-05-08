@@ -13,22 +13,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    
-
     <div class="header">
-        <div class="nav_links">
-            <a href="#" class="topnav">главная</a>
-            <a href="lessons.html" class="topnav">список предметов</a>
-            <a href="#" class="topnav">первокурсникам</a>
-            <a href="#" class="topnav" id="exit">выйти</a>
+        <div class="container">
+            <div class="header_body">
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><a href="" class="header_link">Главная</a></li>
+                        <li><a href="" class="header_link active_link">Список предметов</a></li>
+                        <li><a href="" class="header_link">Первокурсникам</a></li>
+                        <li><a href="" class="header_link">Расписание</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+    </div>
+
+    <div class="header_main">
+        
     
         <div class="head_description">
             <div class="psevdTop">
-                <!--Кнопка для отправки запроса на запись-->
-                <!-- <button class="append">
-                    Записаться!
-                </button> -->
+                
             </div>
             <!--Название курса-->
             <h1>
@@ -285,5 +293,6 @@
         </footer> 
 
 <script src="js/LessonPage.js"></script>
+<script src="js/lessons.js"></script>
 </body>
 </html>
