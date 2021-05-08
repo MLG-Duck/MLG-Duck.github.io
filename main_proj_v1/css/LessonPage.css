@@ -104,6 +104,15 @@ ul {
     margin-bottom: 120px;
 }
 
+a.active_link,
+a:hover {
+    color: #B111EA;
+}
+
+a:active {
+    color: #C849F5;
+}
+
 /* .nav_links{
     margin-top: 20px;
     display: flex;
