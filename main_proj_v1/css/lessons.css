@@ -275,9 +275,9 @@ ul {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 910px) {
     .header-text .title {
-        font-size: calc(35px + (16 + 16 * 0.7) * ((100vw - 320px) / 768));
+        font-size: calc(35px + (16 + 16 * 0.7) * ((100vw - 320px) / 910));
     }
 
     .subj {
