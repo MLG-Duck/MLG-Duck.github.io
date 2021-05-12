@@ -87,6 +87,7 @@ body {
     justify-content: flex-end;
     font-weight: 400;
     margin-bottom: 64px;
+    color: black;
 }
 
 .container .home-link:visited {
