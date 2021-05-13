@@ -572,7 +572,7 @@ a:active {
       }
 
       .head_description>h1{
-          font-size: 38px;
+          font-size: calc(25px + (16 + 16*0.7)*((100vw - 320px)/910));
           margin: 0;
       }
 
