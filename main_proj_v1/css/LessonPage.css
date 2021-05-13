@@ -470,6 +470,10 @@ a:active {
       .themePar, .status{
         font-size: calc(15px + (16 + 16 * 0.7) * ((100vw - 320px) / 910));
       }
+    .head_description>h1{
+          font-size: calc(25px + (16 + 16*0.7)*((100vw - 320px)/910));
+          margin: 20px 0 0 0;
+      }
     .AboutCourse{
         flex-direction: column;
         margin: 0;
@@ -571,10 +575,7 @@ a:active {
           margin-top: 50px;
       }
 
-      .head_description>h1{
-          font-size: calc(25px + (16 + 16*0.7)*((100vw - 320px)/910));
-          margin: 0;
-      }
+      
 
       .psevdTop,
       .psevdBot{
