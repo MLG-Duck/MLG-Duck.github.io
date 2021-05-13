@@ -60,6 +60,9 @@ ul {
     z-index: 2;
 }
 
+.status {
+    margin: 10px 0 0 0;
+}
 .header_body {
     position: relative;
     display: flex;
