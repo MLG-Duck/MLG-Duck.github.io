@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Roboto', Helvetica, Arial, sans-serif ;
 
@@ -12,8 +13,8 @@ h1, h2, h3, h4, h5, h6{
 a{
     text-decoration: none;
     color: black;
-    
-    
+
+
 }
 
 a:visited{
@@ -27,7 +28,7 @@ header {
     width: 100vw;
     margin: 0;
     padding: 0;
-    background: url(../img/lessons/Body.png) top center no-repeat;
+    background: url(../../img/courses/lessons/Body.png) top center no-repeat;
     background-size: 100% 100%;
 }
 
@@ -60,9 +61,6 @@ ul {
     z-index: 2;
 }
 
-.status {
-    margin: 10px 0 0 0;
-}
 .header_body {
     position: relative;
     display: flex;
@@ -120,11 +118,11 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 20%;
+    margin: 0 auto;
     margin-top: 100px;
     text-align: center;
     min-height: 140px;
-    
+
 }
 
 
@@ -148,17 +146,15 @@ a:active {
 }
 
 .head_description > h1{
-    
     font-size: 64px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 75px;
     letter-spacing: 0.2em;
-    text-align: left;
     margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
-    max-width: 553px;
+    /*max-width: 553px;*/
 }
 
 
@@ -168,8 +164,6 @@ a:active {
     justify-content: space-between;
     align-items: center;
     min-width: 550px;
-    
-    
 }
 
 .psevdTop::before{
@@ -182,8 +176,8 @@ a:active {
 }
 
 
+
 .status{
-    
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -191,10 +185,14 @@ a:active {
     line-height: 21px;
     letter-spacing: 0em;
     text-align: right;
-    text-decoration-line: underline;
-
 }
-
+.btn_to_write{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.aud_link{
+    color:#B111EA !important;
+}
 .psevdBot::after{
     content: '';
     display: block;
@@ -228,6 +226,7 @@ a:active {
 }
 
 .CourseDescription{
+    width: 100%;
     margin-bottom: 45px;
     display: flex;
     justify-content: center;
@@ -245,11 +244,10 @@ a:active {
 }
 
 .H3teacher{
-    
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: right;
@@ -266,6 +264,7 @@ a:active {
 
 
 .CourseTeachers{
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -306,19 +305,17 @@ a:active {
 
 .WhereElem:nth-child(even){
     color: #B111EA;
-    
+
 }
 
 .WhereElem{
-    
+
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0em;
-    text-align: justified;
-
 }
 
 .teacher{
@@ -332,18 +329,16 @@ a:active {
 
 .eMail{
     color:#B111EA;
-    
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0em;
-    text-align: justified;
-
 }
 
 .crossing{
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -354,14 +349,14 @@ a:active {
 
 .RightSide{
     text-align: left;
-    width: 45%;
+    width: 55%;
     display: flex;
     flex-direction: column;
 }
 
 .themeTitle > h2 {
     text-align: left;
-    
+
 }
 
 .arrow {
@@ -379,9 +374,9 @@ a:active {
 
 
 
-.SideBar{   
+.SideBar{
     margin: 0 42px;
-    
+
 }
 
 .themeTitle{
@@ -392,7 +387,7 @@ a:active {
 }
 
 .Theme{
-    
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -412,7 +407,7 @@ a:active {
     font-style: normal;
     font-weight: normal;
     font-weight: bold;
-    
+
 }
 
 
@@ -420,7 +415,6 @@ a:active {
 .ThemeContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -452,18 +446,30 @@ a:active {
 .active_arr{
     transform: rotate(0.5turn);
     transition: max-height 0.2s ease-out;
-    
-    
+
+
 }
 
 .HiddenInfo{
     max-height: 0;
     overflow: hidden;
-    
+
     transition: max-height 0.2s ease-out;
 }
 
+.status {
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
 @media screen and (min-width:100px) and (max-width:1024px) {
+
+    .CourseP, .WhereElem, .teacherTitle,
+      .themePar, .status{
+        font-size: calc(15px + (16 + 16 * 0.7) * ((100vw - 320px) / 910));
+      }
     .AboutCourse{
         flex-direction: column;
         margin: 0;
@@ -473,7 +479,7 @@ a:active {
 
     .LeftSide{
         min-width: 300px;
-        
+
         width: 90%;
         margin-left: 10%;
         margin-right: 0;
@@ -483,7 +489,7 @@ a:active {
 
     .RightSide{
         min-width: 300px;
-        
+
         width: 90%;
         margin-left: 10%;
         margin-right: 0;
@@ -494,8 +500,8 @@ a:active {
 
     .CourseP{
         text-align: left;
-        
-        
+
+
     }
 
     .RightSide{
@@ -535,7 +541,7 @@ a:active {
 
     .head_description{
         margin-top: 50px;
-        
+
     }
     .header{
         margin-bottom: 50px;
@@ -568,8 +574,6 @@ a:active {
       .head_description>h1{
           font-size: 38px;
           margin: 0;
-          letter-spacing: 1px;
-          line-height: normal;
       }
 
       .psevdTop,
@@ -581,7 +585,7 @@ a:active {
           font-size: 7px;
       }
 
-      
+
 
       .psevdBot:after,
       .psevdTop::before{
@@ -595,10 +599,7 @@ a:active {
 
 
 
-      .CourseP, .WhereElem, .teacherTitle, 
-      .themePar, .status{
-          font-size: 15px;
-      }
+      
       .CourseTitle{
           font-size: 30px;
       }
@@ -607,12 +608,11 @@ a:active {
           margin-bottom: 50px;
       }
 
-      
+
 
       .RightSide{
           justify-content: center;
           align-items: center;
-          width: none;
       }
 
       .themePar{
@@ -656,7 +656,7 @@ a:active {
     }
 
     header {
-        background: url(../img/lessons/Body.png) bottom center no-repeat;
+        background: url(../../img/courses/lessons/Body.png) bottom center no-repeat;
         background-size: 120% 100%;
     }
 
@@ -714,7 +714,8 @@ a:active {
         width: 100vw;
         height: 100%;
         background-color: #fff;
-        padding: 50px 0px 0px 0px !important;
+        padding: 50px 0px 0px 0px;
+        ;
     }
 
     .header_menu.active {
